@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 555af7c1b692f13438389908c6c281cf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chompersprites_0
+    21300002: chompersprites_1
+    21300004: chompersprites_2
+    21300006: chompersprites_3
+    21300008: chompersprites_4
+    21300010: chompersprites_5
+    21300012: chompersprites_6
+    21300014: chompersprites_7
+    21300016: chompersprites_8
+    21300018: chompersprites_9
+    21300020: chompersprites_10
+    21300022: chompersprites_11
+    21300024: chompersprites_12
+    21300026: chompersprites_13
+    21300028: chompersprites_14
+    21300030: chompersprites_15
+    21300032: chompersprites_16
+    21300034: chompersprites_17
+    21300036: chompersprites_18
+    21300038: chompersprites_19
+    21300040: chompersprites_20
+    21300042: chompersprites_21
+    21300044: chompersprites_22
+    21300046: chompersprites_23
+    21300048: chompersprites_24
+    21300050: chompersprites_25
+    21300052: chompersprites_26
+    21300054: chompersprites_27
+    21300056: chompersprites_28
+    21300058: chompersprites_29
+    21300060: chompersprites_30
+    21300062: chompersprites_31
+    21300064: chompersprites_32
+    21300066: chompersprites_33
+    21300068: chompersprites_34
+    21300070: chompersprites_35
+    21300072: chompersprites_36
+    21300074: chompersprites_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chompersprites_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 96
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 99
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 99
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_12
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 63
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 62
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_14
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 64
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_19
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 67
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 67
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_24
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_25
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 35
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_27
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 35
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_28
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 40
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_29
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 43
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_30
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_32
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_33
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_34
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_35
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_36
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 3
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompersprites_37
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 2f3c635a9cc6f694b8e8dbb74fc95052
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chompermazetiles_0
+    21300002: chompermazetiles_1
+    21300004: chompermazetiles_2
+    21300006: chompermazetiles_3
+    21300008: chompermazetiles_4
+    21300010: chompermazetiles_5
+    21300012: chompermazetiles_6
+    21300014: chompermazetiles_7
+    21300016: chompermazetiles_8
+    21300018: chompermazetiles_9
+    21300020: chompermazetiles_10
+    21300022: chompermazetiles_11
+    21300024: chompermazetiles_12
+    21300026: chompermazetiles_13
+    21300028: chompermazetiles_14
+    21300030: chompermazetiles_15
+    21300032: chompermazetiles_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chompermazetiles_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 57
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 57
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_6
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 35
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 36
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_11
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_13
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 44
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 4
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chompermazetiles_16
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
