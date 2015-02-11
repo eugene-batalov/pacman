@@ -21,6 +21,7 @@ public class CharactersController : MonoBehaviour {
         _oldPosition = _to = _from = transform.position;
         _newDirection = _direction = Vector2.zero;
         GameManager.PauseOnOff += (p) => _pause = p;
+        AfterStart();
     }
 
     protected virtual void AfterStart()
