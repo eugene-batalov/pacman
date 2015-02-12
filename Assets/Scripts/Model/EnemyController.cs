@@ -31,6 +31,6 @@ public class EnemyController : CharactersController
     }
     void OnTriggerEnter2D(Collider2D c)
     {
-        _newDirection = -_direction;
+        if (c.gameObject.tag == EnemyTag) _newDirection = -_direction;
     }
 }

@@ -9,6 +9,16 @@ public class ShowLifes : MonoBehaviour {
     {
         text = GetComponent<Text>();
         if (text == null) Debug.LogError("need Text Component!");
-        else GameManager.ShowLifes += (lifes)=> text.text = string.Format("Lifes: {0}", lifes);
+        else GameManager.ShowLifes += SetText;
+    }
+
+    private void SetText(int lifes)
+    {
+        if (text != null) text.text = string.Format("Lifes: {0}", lifes);
+    }
+
+    void OnDestroy()
+    {
+        GameManager.ShowLifes -= SetText;
     }
 }

@@ -15,12 +15,14 @@ public class CharactersController : MonoBehaviour {
     protected Vector2 _to;
     protected Vector2 _oldPosition;
     protected bool _pause;
+    protected Animator _anim;
 
     protected void Start()
     {
         _oldPosition = _to = _from = transform.position;
         _newDirection = _direction = Vector2.zero;
         GameManager.PauseOnOff += (p) => _pause = p;
+        _anim = GetComponent<Animator>();
         AfterStart();
     }
 
@@ -45,6 +47,8 @@ public class CharactersController : MonoBehaviour {
             }
             _direction = _newDirection;
 
+            UpdateAnimation();
+
             if (Mathf.Abs(_direction.y) > 0.9) transform.position = new Vector2(_to.x, transform.position.y); // корректировка при движении вверх или вниз
             if (Mathf.Abs(_direction.x) > 0.9) transform.position = new Vector2(transform.position.x, _to.y); // вправо или влево
 
@@ -53,8 +57,15 @@ public class CharactersController : MonoBehaviour {
         else
         {
             _direction = _newDirection = Vector2.zero;
+            UpdateAnimation();
             return false;
         }
+    }
+
+    private void UpdateAnimation()
+    {
+        _anim.SetFloat("hSpeed", _direction.x);
+        _anim.SetFloat("vSpeed", _direction.y);
     }
 
     protected void Move()
@@ -70,7 +81,8 @@ public class CharactersController : MonoBehaviour {
         if (CanMove()) Move();
     }
 
-    public void SetDirection(Vector2 d)
+    // для внешнего управления
+    public void SetDirection(Vector2 d) 
     {
         if (Vector2.Dot(_direction, d) == -1f || _direction == Vector2.zero) // развернуться назад или тронуться
         {

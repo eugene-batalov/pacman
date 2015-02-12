@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelManager : MonoBehaviour
 {
     public string WallsTag = "Wall";
-    public Vector2 CenterDelta = Vector2.zero;
+    public string FoodTag = "Food";
 
     const int dimx = 20; // поле 20х20
     const int dimy = 20;
@@ -22,8 +22,8 @@ public class LevelManager : MonoBehaviour
         for (var i = 0; i < dimx; i++)
             for (var j = 0; j < dimy; j++)
             {
-                var x = (i - 9) * _gridStep;// -CenterDelta.x;
-                var y = (j - 9) * _gridStep;// -CenterDelta.y;
+                var x = (i - 9) * _gridStep;
+                var y = (j - 9) * _gridStep;
                 _positions[i, j] = new Vector2(x, y);
                 _obstacles[i, j] = false;
             }
@@ -32,17 +32,89 @@ public class LevelManager : MonoBehaviour
         if (walls == null) Debug.LogError("No walls found!");
         foreach (var wall in walls)
         {
-            var x = wall.transform.position.x;// -CenterDelta.x;
-            var y = wall.transform.position.y;// -CenterDelta.y;
+            var x = wall.transform.position.x;
+            var y = wall.transform.position.y;
             var i = Mathf.RoundToInt(x / _gridStep + ((dimx / 2f) - 1f));
             var j = Mathf.RoundToInt(y / _gridStep + ((dimy / 2f) - 1f));
 
             _obstacles[i, j] = true;
         }
+        GameManager.Dead += Dead;
     }
 
-    void Update()
+    void Start()
     {
+        if (PlayerPrefs.HasKey("Load Game") && PlayerPrefs.GetInt("Load Game") == 1) Load();
+    }
+
+    void OnDestroy()
+    {
+        Instance = null;
+    }
+
+    void Dead()
+    {
+        Save();
+        Application.LoadLevel(1);
+    }
+    void Save()
+    {
+        var foods = GameObject.FindGameObjectsWithTag(FoodTag);
+
+        int[,] foodsArray = new int[dimx, dimy];
+        foreach (var food in foods)
+        {
+            var x = food.transform.position.x;
+            var y = food.transform.position.y;
+            var i = Mathf.RoundToInt(x / _gridStep + ((dimx / 2f) - 1f));
+            var j = Mathf.RoundToInt(y / _gridStep + ((dimy / 2f) - 1f));
+
+            foodsArray[i, j] = 1;
+        }
+
+        for (var i = 0; i < dimx; i++)
+            for (var j = 0; j < dimy; j++)
+            {
+                PlayerPrefs.SetInt(string.Format("food{0}_{1}",i,j), foodsArray[i, j]);
+            }
+        PlayerPrefs.SetInt("Scores", GameManager.Instance.Scores);
+        PlayerPrefs.SetInt("Lifes", GameManager.Instance.Lifes);
+        PlayerPrefs.SetInt("Load Game", 1);
+        PlayerPrefs.Save();
+    }
+
+    bool Load()
+    {
+        var foods = GameObject.FindGameObjectsWithTag(FoodTag);
+        int[,] foodsArray = new int[dimx, dimy];
+        
+        for (var i = 0; i < dimx; i++)
+            for (var j = 0; j < dimy; j++)
+            {
+                var s = string.Format("food{0}_{1}", i, j);
+                if (PlayerPrefs.HasKey(s)) foodsArray[i, j] = PlayerPrefs.GetInt(s);
+                else
+                { 
+                    Debug.Log("No Saved Game!");
+                    return false;
+                }
+            }
+        foreach (var food in foods)
+        {
+            var x = food.transform.position.x;
+            var y = food.transform.position.y;
+            var i = Mathf.RoundToInt(x / _gridStep + ((dimx / 2f) - 1f));
+            var j = Mathf.RoundToInt(y / _gridStep + ((dimy / 2f) - 1f));
+
+            if (foodsArray[i, j] == 0) food.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.HasKey("Scores") && PlayerPrefs.HasKey("Lifes"))
+        {
+            GameManager.Instance.Scores = PlayerPrefs.GetInt("Scores");
+            GameManager.Instance.Lifes = PlayerPrefs.GetInt("Lifes");
+            return true;
+        }
+        else return false;
     }
 
     public Vector2 NextStop(Vector2 from, Vector2 to)

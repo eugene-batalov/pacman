@@ -2,17 +2,9 @@
 using System.Collections;
 
 public class StartMenuControl : MonoBehaviour {
-
-	void Start () 
+    public void LoadLevel(bool load)
     {
-	}
-	
-	void Update () 
-    {
-	}
-
-    public void LoadLevel()
-    {
+        if (PlayerPrefs.HasKey("Load Game")) PlayerPrefs.SetInt("Load Game", load? 1 : 0);
        Application.LoadLevel(1);
     }
 
