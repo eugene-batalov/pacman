@@ -55,9 +55,9 @@ public class LevelManager : MonoBehaviour
     void Dead()
     {
         Save();
-        Application.LoadLevel(1);
+        Application.LoadLevel(1); // сохранить и перезагрузить уровень
     }
-    void Save()
+    public void Save()
     {
         var foods = GameObject.FindGameObjectsWithTag(FoodTag);
 

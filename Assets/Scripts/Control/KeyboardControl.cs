@@ -14,6 +14,6 @@ public class KeyboardControl : MonoBehaviour {
         if (Input.GetKeyDown(Down)) SendMessage("SetDirection", -Vector2.up);
         if (Input.GetKeyDown(Right)) SendMessage("SetDirection", Vector2.right);
         if (Input.GetKeyDown(Left)) SendMessage("SetDirection", -Vector2.right);
-        if (Input.GetKeyDown(Pause) && GameManager.Pause != null) GameManager.Pause();
+        if (Input.GetKeyDown(Pause) && GameManager.Pause != null) GameManager.Pause(); // можно слать событие скриптам на своем объекте, можно привязаться к глобальным Action
 	}
 }

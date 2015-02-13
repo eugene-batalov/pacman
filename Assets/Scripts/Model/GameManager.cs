@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 
 public class GameManager : MonoBehaviour
 {
-
     public static Action<int> ChangeLifes;
     public static Action Dead;
     public static Action<int> ShowLifes;
@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         ChangeLifes += MakeChangeLifes;
         ChangeScores += MAkeChangeScores;
         Pause += TogglePause;
+        GameOver += GameOverProcess;
     }
 
     void OnDestroy()
@@ -69,6 +70,13 @@ public class GameManager : MonoBehaviour
         if (ShowLifes != null) ShowLifes(Lifes);
         if (Lifes == 0 && GameOver != null) GameOver();
         else if (Dead != null) Dead();
+    }
+
+    void GameOverProcess()
+    {
+        var s1 = string.Format("hs{0}_score", 0);
+        PlayerPrefs.SetInt(s1, Scores);
+        Application.LoadLevel(2); // Ввод имени для HighScores
     }
 
     void MAkeChangeScores(int delta)
